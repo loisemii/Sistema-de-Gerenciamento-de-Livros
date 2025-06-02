@@ -61,3 +61,6 @@ O projeto conta com arquivos `Dockerfile`, `docker-compose.yml` e scripts auxili
 * Trabalhar com datas, filtros, enums e relacionamento entre entidades.
 * Configuração e uso de Docker para ambientes de desenvolvimento e produção.
 
+Se você tiver dúvidas ou precisar de ajuda, consulte as instruções no código-fonte ou entre em contato com os seguintes canais:
+
+Link do repositório no GitHub Para questões técnicas, envie um email para: loisee.dev@gmail.com Para discussões sobre o projeto, utilize a seção de Issues no GitHub. Autores do projeto Emilli Loise Moraes Campos
