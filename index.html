@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .api-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .api-link:hover {
+            background-color: #0056b3;
+        }
+        .endpoints {
+            margin-top: 30px;
+        }
+        .endpoint {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Book Management System API</h1>
+        <p>Welcome to the Book Management System API! This application integrates with the Gutendex API to manage books and authors.</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="/swagger-ui.html" class="api-link">📖 View API Documentation</a>
+            <a href="/api-docs" class="api-link">📄 OpenAPI Specification</a>
+        </div>
+        
+        <div class="endpoints">
+            <h2>Available Endpoints</h2>
+            
+            <div class="endpoint">
+                <div class="method">POST /api/books/search</div>
+                <div>Search and save a book by title from Gutendex API</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/books</div>
+                <div>Get all registered books</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/books/language/{languageCode}</div>
+                <div>Get books by language (PT, EN, ES, FR)</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/books/{id}</div>
+                <div>Get a specific book by ID</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/authors</div>
+                <div>Get all registered authors</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/authors/year/{year}</div>
+                <div>Get authors who were alive in a specific year</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/authors/{id}</div>
+                <div>Get a specific author by ID</div>
+            </div>
+            
+            <div class="endpoint">
+                <div class="method">GET /api/health</div>
+                <div>Application health check</div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; padding: 20px; background-color: #e9ecef; border-radius: 5px;">
+            <h3>🚀 Getting Started</h3>
+            <ol>
+                <li>Start the application</li>
+                <li>Visit <a href="/swagger-ui.html">/swagger-ui.html</a> for interactive API documentation</li>
+                <li>Use the CLI interface in your terminal for command-line operations</li>
+                <li>Test the API endpoints using the Swagger UI or any HTTP client</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
